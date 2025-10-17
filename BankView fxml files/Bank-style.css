@@ -1,0 +1,61 @@
+/* Root AnchorPane background */
+.anchor-pane {
+    -fx-background-color: #e6f0ff; /* very light blue */
+}
+
+
+.label {
+    -fx-text-fill: #003366; /* dark blue for text */
+}
+
+
+.label {
+    -fx-font-family: "Arial";
+}
+
+
+.button {
+    -fx-background-color: #3399ff; /* medium blue */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8px;
+    -fx-padding: 6 12 6 12;
+}
+
+.button:hover {
+    -fx-background-color: #66b3ff; /* lighter blue on hover */
+}
+
+/* TextFields and ChoiceBoxes */
+.text-field, .choice-box {
+    -fx-background-color: white;
+    -fx-border-color: #3399ff;
+    -fx-border-radius: 5px;
+    -fx-padding: 4 6 4 6;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused, .choice-box:focused {
+    -fx-border-color: #0066cc; /* darker blue when focused */
+}
+
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #3399ff;
+    -fx-border-radius: 5px;
+}
+
+.table-column {
+    -fx-font-weight: bold;
+    -fx-background-color: #cce0ff;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #99ccff;
+}

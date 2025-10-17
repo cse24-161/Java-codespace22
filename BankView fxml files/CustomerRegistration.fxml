@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="455.0" prefWidth="687.0" stylesheets="@Bank-style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+
+    <VBox alignment="CENTER" layoutX="0" layoutY="25" prefWidth="620">
+        <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text=" Customer Registration" />
+        <Label style="-fx-font-size: 14px; -fx-text-fill: gray;" text="Create your bank profile below" />
+    </VBox>
+   <Label layoutX="47.0" layoutY="141.0" prefHeight="20.0" prefWidth="94.0" text="Surname">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Label>
+   <Label layoutX="47.0" layoutY="183.0" text="FirstNames">
+      <font>
+         <Font size="19.0" />
+      </font>
+   </Label>
+   <Label layoutX="47.0" layoutY="226.0" prefHeight="30.0" prefWidth="94.0" text="Email">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="47.0" layoutY="276.0" prefHeight="32.0" prefWidth="121.0" text="Gender">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="47.0" layoutY="333.0" prefHeight="30.0" prefWidth="121.0" text="Password">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <PasswordField layoutX="236.0" layoutY="335.0" />
+   <TextField layoutX="236.0" layoutY="228.0" />
+   <TextField layoutX="236.0" layoutY="184.0" />
+   <TextField layoutX="236.0" layoutY="141.0" />
+   <Button layoutX="292.0" layoutY="403.0" mnemonicParsing="false" text="REGISTER" />
+   <CheckBox layoutX="236.0" layoutY="284.0" mnemonicParsing="false" text="Male" />
+   <CheckBox layoutX="326.0" layoutY="284.0" mnemonicParsing="false" text="Female" />
+
+
+
+</AnchorPane>

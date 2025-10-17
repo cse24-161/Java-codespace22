@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@Bank-style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+
+        <VBox alignment="CENTER" layoutX="0" layoutY="20" prefWidth="400" spacing="10">
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="💸 Withdraw Money" />
+        </VBox>
+
+        <HBox alignment="CENTER" layoutX="80" layoutY="220" spacing="30" />
+   <Label layoutX="89.0" layoutY="138.0" text="Account">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="122.0" layoutY="61.0" text="Choose account type and input amount to withdraw">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <CheckBox layoutX="173.0" layoutY="143.0" mnemonicParsing="false" text="Investment Acc" />
+   <CheckBox layoutX="300.0" layoutY="143.0" mnemonicParsing="false" text="Cheque Acc" />
+   <TextField layoutX="173.0" layoutY="220.0" />
+         <Button fx:id="cancelButton" layoutX="296.0" layoutY="290.0" text="Cancel" />
+         <Button fx:id="withdrawButton" layoutX="181.0" layoutY="290.0" text="Withdraw" />
+   <Label layoutX="89.0" layoutY="224.0" text="Amount">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+
+    </AnchorPane>

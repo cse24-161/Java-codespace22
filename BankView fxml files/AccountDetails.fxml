@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="469.0" prefWidth="876.0" stylesheets="@Bank-style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+
+
+    <VBox alignment="CENTER" layoutX="0" layoutY="25" prefWidth="720">
+        <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="🏦 Account Details" />
+        <Label style="-fx-font-size: 14px; -fx-text-fill: gray;" text="View all your active accounts and balances" />
+    </VBox>
+
+    <VBox layoutX="80" layoutY="120" prefWidth="560" spacing="10">
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Your Accounts" />
+
+        <TableView fx:id="accountsTable" prefHeight="260" prefWidth="522.0">
+            <columns>
+                <TableColumn fx:id="accountNumberColumn" prefWidth="160" text="Account Number" />
+                <TableColumn fx:id="accountTypeColumn" prefWidth="223.0" text="Account Type" />
+                <TableColumn fx:id="balanceColumn" prefWidth="176.0" text="Balance" />
+            </columns>
+        </TableView>
+    </VBox>
+
+    <HBox alignment="CENTER" layoutX="180" layoutY="420" spacing="20">
+        <Button fx:id="openAccountButton" prefWidth="130" text="Open New Account" />
+        <Button fx:id="backButton" prefWidth="130" text="Back to Dashboard" />
+    </HBox>
+</AnchorPane>

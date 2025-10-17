@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@Bank-style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="$CONTROLLER_NAME$">
+
+
+    <VBox alignment="CENTER" layoutX="0" layoutY="10" prefWidth="720" spacing="5">
+        <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="🏦 BAC Bank Customer Dashboard" />
+        <Label fx:id="welcomeLabel" style="-fx-font-size: 15px;" text="Welcome!" />
+    </VBox>
+
+    <HBox alignment="CENTER" layoutX="80" layoutY="100" spacing="15">
+        <Button fx:id="accountDetailsButton" prefWidth="120" text="Account Details" />
+        <Button fx:id="depositButton" prefWidth="120" text="Deposit" />
+        <Button fx:id="withdrawButton" prefWidth="120" text="Withdraw" />
+        <Button fx:id="openAccountButton" prefWidth="120" text="Open Account" />
+    </HBox>
+
+
+    <Label layoutX="280" layoutY="170" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Recent Transactions" />
+
+    <TableView fx:id="transactionTable" layoutX="60" layoutY="200" prefHeight="230" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="dateColumn" prefWidth="120" text="Date" />
+            <TableColumn fx:id="typeColumn" prefWidth="120" text="Type" />
+            <TableColumn fx:id="accountTypeColumn" prefWidth="120" text="Account Type" />
+            <TableColumn fx:id="amountColumn" prefWidth="120" text="Amount (P)" />
+            <TableColumn fx:id="balanceColumn" prefWidth="120" text="Balance After" />
+        </columns>
+    </TableView>
+
+    <!-- LOGOUT SECTION -->
+    <HBox alignment="CENTER_RIGHT" layoutX="490" layoutY="460" spacing="10">
+        <Label fx:id="dateTimeLabel" text="Date: 2025-10-17" />
+        <Button fx:id="logoutButton" text="Logout" />
+    </HBox>
+
+
+
+</AnchorPane>
